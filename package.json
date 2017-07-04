@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
     "express": "^4.15.3",
     "serve-index": "^1.9.0"
   }

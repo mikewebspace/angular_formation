@@ -1,7 +1,7 @@
 (function () {
 	'use strict';
 
-	var app = angular.module('exerciceUn', []);
+	var app = angular.module('main', ['bd-route']);
 
 	app.directive('bdHeader', function () {
 		return {
