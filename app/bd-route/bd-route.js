@@ -3,7 +3,8 @@
 
 	var app = angular.module('bd-route', ['ui.router']);
 
-	app.config(function ($locationProvider, $stateProvider) {
+	app.config(function ($locationProvider, $stateProvider, $urlRouterProvider) {
+
 		$locationProvider.html5Mode(true);
 
 		$stateProvider.state({
@@ -26,7 +27,8 @@
 			url: '/contact',
 			templateUrl: './bd-route/tmpl/contact.html'
 		});
-
+		// Redirection vers le home si URL non trouvée
+		$urlRouterProvider.otherwise('/');
 	});
 
 })();
