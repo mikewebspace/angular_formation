@@ -1,7 +1,7 @@
 (function () {
 	'use strict';
 
-	var app = angular.module('main', ['bd-route']);
+	var app = angular.module('main', ['bd-route', 'bd-star']);
 
 	app.directive('bdHeader', function () {
 		return {
