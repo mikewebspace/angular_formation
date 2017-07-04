@@ -3,7 +3,7 @@
 
 	var app = angular.module('bd-route', ['ui.router']);
 
-	app.config(function($stateProvider) {
+	app.config(function ($stateProvider) {
 		$stateProvider.state({
 			name: 'home',
 			url: '/',
@@ -24,7 +24,7 @@
 			url: '/contact',
 			templateUrl: './bd-route/tmpl/contact.html'
 		});
-		
+
 	});
 
 })();
