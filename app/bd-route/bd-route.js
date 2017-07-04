@@ -6,23 +6,23 @@
 	app.config(function($stateProvider) {
 		$stateProvider.state({
 			name: 'home',
-			url: './bd-route/tmpl/home.html',
-			template: 'Home'
+			url: '/',
+			templateUrl: './bd-route/tmpl/home.html'
 		});
 		$stateProvider.state({
 			name: 'products',
-			url: './bd-route/tmpl/products.html',
-			template: 'Products'
+			url: '/products',
+			templateUrl: './bd-route/tmpl/products.html'
 		});
 		$stateProvider.state({
 			name: 'services',
-			url: './bd-route/tmpl/services.html',
-			template: 'Services'
+			url: '/services',
+			templateUrl: './bd-route/tmpl/services.html'
 		});
 		$stateProvider.state({
 			name: 'contact',
-			url: './bd-route/tmpl/contact.html',
-			template: 'Contact'
+			url: '/contact',
+			templateUrl: './bd-route/tmpl/contact.html'
 		});
 		
 	});
