@@ -3,7 +3,9 @@
 
 	var app = angular.module('bd-route', ['ui.router']);
 
-	app.config(function ($stateProvider) {
+	app.config(function ($locationProvider, $stateProvider) {
+		$locationProvider.html5Mode(true);
+
 		$stateProvider.state({
 			name: 'home',
 			url: '/',

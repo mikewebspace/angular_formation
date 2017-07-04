@@ -16,6 +16,11 @@ const app = express();
 app.use(express.static('.'));
 app.use(serveIndex('.', { icons: true }));
 
+// Pour le mode HTML 5 (url plus simples)
+app.use('/app/', function (req, res, next) {
+	res.sendFile('./app/index.html', {root: __dirname});
+});
+
 app.use(function (req, res, next) {
 	console.log('404: Page not Found', req.url);
 	next();
