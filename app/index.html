@@ -1,19 +1,24 @@
-<html ng-app="main">
+<!--<html ng-app="main"> Modifié pour Webpack-->
+<html ng-csp>
 
 <head>
     <title>Exercice</title>
     <base href="/app/">
+    <link rel="stylesheet" href="wpk/bundle.css">
 </head>
 
-<body>
+<body ng-cloak ng-app="main">
     <bd-header></bd-header>
     <bd-body></bd-body>
     <bd-footer></bd-footer>
-    <script src="../node_modules/angular/angular.js"></script>
-    <script src="../node_modules/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="bd-route/bd-route.js"></script>
-    <script src="bd-star/bd-star.js"></script>
-    <script src="app.js"></script>
+    <!-- Remplacement des imports par bundle pour Webpack -->
+    <!--<script src="../node_modules/angular/angular.js"></script>-->
+    <!--<script src="../node_modules/angular-ui-router/release/angular-ui-router.js"></script>-->
+    <!--<script src="bd-route/bd-route.js"></script>-->
+    <!--<script src="bd-star/bd-star.js"></script>-->
+    <!--<script src="app.js"></script>-->
+    <script src="wpk/bundle.js"></script>
+
 </body>
 
 </html>

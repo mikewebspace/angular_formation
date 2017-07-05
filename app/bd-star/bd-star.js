@@ -3,7 +3,7 @@
 
 	var app = angular.module('bd-star', []);
 
-	app.directive('bdStar', function () {
+	/*app.directive('bdStar', function () {
 		return {
 			//template: 'toto',
 			scope: {
@@ -32,11 +32,8 @@
 				});
 
 			}
-			/*compile: function () {
-				console.log('BdStar compile', arguments);
-			}*/
 		};
-	});
+	});*/
 
 	app.component('bdStar2',
 		{
@@ -69,9 +66,6 @@
 				});
 
 			}
-			/*compile: function () {
-				console.log('BdStar compile', arguments);
-			}*/
 		});
 
 })();

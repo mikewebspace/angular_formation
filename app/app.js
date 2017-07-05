@@ -1,27 +1,36 @@
-(function () {
-	'use strict';
+//(function () { // Pas utile avec Webpack
+//'use strict'; // Pas utile avec webpack
 
-	var app = angular.module('main', ['bd-route', 'bd-star']);
+// Ajouté pour Webpack
+import 'angular/angular-csp.css';
+import './style.scss';
 
-	app.directive('bdHeader', function () {
-		return {
-			restrict: 'E',
-			templateUrl: 'tmpl/bd-header.html'
-		};
-	});
+import 'angular';
+import 'angular-ui-router';
+import './bd-star/bd-star.js';
+import './bd-route/bd-route.js';
 
-	app.directive('bdBody', function () {
-		return {
-			restrict: 'E',
-			templateUrl: 'tmpl/bd-body.html'
-		};
-	});
+const app = angular.module('main', ['bd-route', 'bd-star']);
 
-	app.directive('bdFooter', function () {
-		return {
-			restrict: 'E',
-			templateUrl: 'tmpl/bd-footer.html'
-		};
-	});
+app.directive('bdHeader', function () {
+	return {
+		restrict: 'E',
+		templateUrl: 'tmpl/bd-header.html'
+	};
+});
 
-})();
+app.directive('bdBody', function () {
+	return {
+		restrict: 'E',
+		templateUrl: 'tmpl/bd-body.html'
+	};
+});
+
+app.directive('bdFooter', function () {
+	return {
+		restrict: 'E',
+		templateUrl: 'tmpl/bd-footer.html'
+	};
+});
+
+//})(); // Pas utile avec Webpack

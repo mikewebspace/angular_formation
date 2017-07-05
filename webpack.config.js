@@ -4,11 +4,11 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 	entry: {
-		'bundle': './app/app.js'
+		bundle: './app/app.js'
 	},
 	output: {
 		filename: '[name].js',
-		path: path.resolve(__dirname, './wpk')
+		path: path.resolve(__dirname, './app/wpk')
 	},
 	resolve: {
 		extensions: ['.ts', '.tsx', '.js']
@@ -102,10 +102,10 @@ module.exports = {
 	plugins: [
 		new ExtractTextPlugin('[name].css'),
 		// comment this if you do not need jQuery.
-		new webpack.ProvidePlugin({
+		/*new webpack.ProvidePlugin({
 			$: 'jquery',
 			jQuery: 'jquery',
 			'window.jQuery': 'jquery'
-		})
+		})*/
 	]
 };
