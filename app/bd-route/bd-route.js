@@ -15,7 +15,9 @@
 		$stateProvider.state({
 			name: 'products',
 			url: '/products',
-			templateUrl: './bd-route/tmpl/products.html'
+			templateUrl: './bd-route/tmpl/products.html',
+			controller: 'BdHttpCtrl',
+			controllerAs: '$ctrl'
 		});
 		$stateProvider.state({
 			name: 'services',

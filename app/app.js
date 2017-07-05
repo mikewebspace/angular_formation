@@ -9,8 +9,9 @@ import 'angular';
 import 'angular-ui-router';
 import './bd-star/bd-star.js';
 import './bd-route/bd-route.js';
+import './bd-http.js';
 
-const app = angular.module('main', ['bd-route', 'bd-star']);
+const app = angular.module('main', ['bd-route', 'bd-star', 'bd-http']);
 
 app.directive('bdHeader', function () {
 	return {
